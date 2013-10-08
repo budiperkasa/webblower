@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+  <name>QLUE Panel</name> 
+  <author>Dan Humphries</author> 
+  <creationDate>February 2011</creationDate> 
+  <copyright>All rights reserved by Qlue 2011.</copyright> 
+  <license>GPL 2.0</license> 
+  <authorEmail>dan.humphries@qlue.info</authorEmail> 
+  <authorUrl>www.qlue.co.uk</authorUrl> 
+  <version>1.0.0</version> 
+  <description>QPanel_DESCRIPTION</description>
+  <files>
+    <filename module="mod_qPanel">mod_qPanel.php</filename>
+    <filename>mod_qPanel.xml</filename>
+    <filename>helper.php</filename>
+    <filename>index.html</filename>
+    <folder>tmpl</folder>
+    <folder>assets</folder>
+  </files>
+  <languages>
+    <language tag="en-GB">en-GB.mod_qPanel.ini</language>
+  </languages>
+  <params>
+    <param name="categoryId" type="category" default="" label="CATEGORY_LABEL" description="CATEGORY_DESC" />
+    <param name="orderBy" type="list" default="" label="ORDER_LABEL" description="ORDER_DESC">
+      <option value="article">ORDER_OPTION_1</option>
+      <option value="alpha">ORDER_OPTION_2</option>
+      <option value="modified">ORDER_OPTION_3</option>
+      <option value="newDate">ORDER_OPTION_4</option>
+      <option value="oldDate">ORDER_OPTION_5</option>
+    </param>
+    <param name="numberPanel" type="text" default="5" label="NUMBER_PANEL_LABEL" description="NUMBER_PANEL_DESC" />
+    <param name="panelName" type="text" default="Show Panel" label="PANEL_NAME_LABEL" description="PANEL_NAME_DESC" />
+  </params>
+</install>

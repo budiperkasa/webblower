@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.7.0" type="plugin" group="content" method="upgrade">
+	<name>plg_content_cdwebgallery</name>
+	<author>Daniel Rataj</author>
+	<creationDate>August 1th, 2011</creationDate>
+	<copyright>(C) 2007 - 2011 Great Joomla! All rights reserved.
+	</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL 3</license>
+	<authorEmail>info@greatjoomla.com</authorEmail>
+	<authorUrl>www.greatjoomla.com</authorUrl>
+	<version>2.0.2 Free</version>
+	<description>PLG_CONTENT_CDWEBGALLERY_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="cdwebgallery">cdwebgallery.php</filename>
+		<folder>engine</folder>
+		<folder>expression</folder>
+		<folder>fields</folder>
+		<folder>helper</folder>
+		<folder>images</folder>
+		<folder>integration</folder>
+		<folder>language</folder>
+		<folder>theme</folder>
+		<filename>index.html</filename>
+		<filename>license-gpl.txt</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_content_cdwebgallery.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_content_cdwebgallery.sys.ini
+		</language>
+	</languages>
+	<config>
+		<fields name="params" addfieldpath="/plugins/system/cdscriptegrator/fields">
+			<fieldset name="layout" label="PLG_CONTENT_CDWEBGALLERY_FIELDSET_LAYOUT" addfieldpath="/plugins/content/cdwebgallery/fields">
+				<field type="checkscriptegrator" title="PLG_CONTENT_CDWEBGALLERY_ENABLE_SCRIPTEGRATOR" />
+				<field name="integration" type="folderlist" default="cdwebgallery"
+					label="PLG_CONTENT_CDWEBGALLERY_LABEL_INTEGRATION" description="PLG_CONTENT_CDWEBGALLERY_DESC_INTEGRATION"
+					directory="plugins/content/cdwebgallery/integration" filter=""
+					exclude="" hide_default="true" hide_none="true" />
+				<field name="theme" type="folderlist" default="default" label="PLG_CONTENT_CDWEBGALLERY_LABEL_THEME"
+					description="PLG_CONTENT_CDWEBGALLERY_DESC_THEME" directory="plugins/content/cdwebgallery/theme"
+					filter="" exclude="" hide_default="true" hide_none="true" />
+				<field name="engine" type="folderlist" default="popup" label="PLG_CONTENT_CDWEBGALLERY_LABEL_ENGINE"
+					description="PLG_CONTENT_CDWEBGALLERY_DESC_ENGINE" directory="plugins/content/cdwebgallery/engine"
+					filter="" exclude="" hide_default="true" hide_none="true" />
+				<field type="spacer" />
+				<field name="display_gal_title" type="list" default="0"
+					label="PLG_CONTENT_CDWEBGALLERY_LABEL_DISPLAY_GALLERY_TITLE" description="PLG_CONTENT_CDWEBGALLERY_DESC_DISPLAY_GALLERY_TITLE">
+					<option value="0">PLG_CONTENT_CDWEBGALLERY_PARAM_DISPLAY_GALLERY_TITLE_NO</option>
+					<option value="1">PLG_CONTENT_CDWEBGALLERY_PARAM_DISPLAY_GALLERY_TITLE_YES</option>
+				</field>
+				<field name="thumbnail_title" type="list" default="1"
+					label="PLG_CONTENT_CDWEBGALLERY_LABEL_THUMBNAIL_TITLE" description="PLG_CONTENT_CDWEBGALLERY_DESC_THUMBNAIL_TITLE">
+					<option value="1">PLG_CONTENT_CDWEBGALLERY_PARAM_THUMBNAIL_TITLE_YES</option>
+					<option value="0">PLG_CONTENT_CDWEBGALLERY_PARAM_THUMBNAIL_TITLE_NO</option>
+				</field>
+				<field type="spacer" />
+				<field name="pagination" type="text" default="0" label="PLG_CONTENT_CDWEBGALLERY_LABEL_PAGINATION"
+					description="PLG_CONTENT_CDWEBGALLERY_DESC_PAGINATION" />
+				<field type="spacer" />
+				<field name="only_first" type="list" default="0" label="PLG_CONTENT_CDWEBGALLERY_LABEL_ONLY_FIRST"
+					description="PLG_CONTENT_CDWEBGALLERY_DESC_ONLY_FIRST">
+					<option value="0">PLG_CONTENT_CDWEBGALLERY_PARAM_ONLY_FIRST_0</option>
+					<option value="1">PLG_CONTENT_CDWEBGALLERY_PARAM_ONLY_FIRST_1</option>
+				</field>
+			</fieldset>
+			<fieldset name="thumbnails" label="PLG_CONTENT_CDWEBGALLERY_FIELDSET_THUMBNAILS">
+				<field name="thumb_output" type="list" default="JPG"
+					label="PLG_CONTENT_CDWEBGALLERY_LABEL_OUTPUT_FORMAT" description="PLG_CONTENT_CDWEBGALLERY_DESC_OUTPUT_FORMAT">
+					<option value="JPG">PLG_CONTENT_CDWEBGALLERY_PARAM_OUTPUT_FORMAT_JPG</option>
+					<option value="PNG">PLG_CONTENT_CDWEBGALLERY_PARAM_OUTPUT_FORMAT_PNG</option>
+				</field>
+				<field name="thumb_height" type="text" default="100"
+					label="PLG_CONTENT_CDWEBGALLERY_LABEL_THUMB_HEIGHT" description="PLG_CONTENT_CDWEBGALLERY_DESC_THUMB_HEIGHT" />
+				<field name="thumb_width" type="text" default="100"
+					label="PLG_CONTENT_CDWEBGALLERY_LABEL_THUMB_WIDTH" description="PLG_CONTENT_CDWEBGALLERY_DESC_THUMB_WIDTH" />
+				<field name="jpg_quality" type="text" default="70"
+					label="PLG_CONTENT_CDWEBGALLERY_LABEL_JPEG_QUALITY" description="PLG_CONTENT_CDWEBGALLERY_DESC_JPEG_QUALITY" />
+			</fieldset>
+			<fieldset name="watermark" label="PLG_CONTENT_CDWEBGALLERY_FIELDSET_WATERMARK">
+				<field name="watermark" type="list" default="1"
+					label="PLG_CONTENT_CDWEBGALLERY_LABEL_USE_WATERMARK" description="PLG_CONTENT_CDWEBGALLERY_DESC_USE_WATERMARK">
+					<option value="1">PLG_CONTENT_CDWEBGALLERY_PARAM_USE_WATERMARK_1</option>
+					<option value="0">PLG_CONTENT_CDWEBGALLERY_PARAM_USE_WATERMARK_0</option>
+				</field>
+				<field name="watermark_image" type="filelist" default="magnify.png"
+					label="PLG_CONTENT_CDWEBGALLERY_LABEL_WATERMARK_IMAGE" description="PLG_CONTENT_CDWEBGALLERY_DESC_WATERMARK_IMAGE"
+					directory="plugins/content/cdwebgallery/images/magnify" filter="\.png$" hide_none="1" hide_default="1" />
+				<field name="watermark_valign" type="list" default="BOTTOM"
+					label="PLG_CONTENT_CDWEBGALLERY_LABEL_VERTICAL_ALIGN" description="PLG_CONTENT_CDWEBGALLERY_DESC_VERTICAL_ALIGN">
+					<option value="TOP">PLG_CONTENT_CDWEBGALLERY_PARAM_VERTICAL_ALIGN_TOP</option>
+					<option value="CENTER">PLG_CONTENT_CDWEBGALLERY_PARAM_VERTICAL_ALIGN_CENTER</option>
+					<option value="BOTTOM">PLG_CONTENT_CDWEBGALLERY_PARAM_VERTICAL_ALIGN_BOTTOM</option>
+				</field>
+				<field name="watermark_halign" type="list" default="RIGHT"
+					label="PLG_CONTENT_CDWEBGALLERY_LABEL_HORIZONTAL_ALIGN" description="PLG_CONTENT_CDWEBGALLERY_DESC_HORIZONTAL_ALIGN">
+					<option value="LEFT">PLG_CONTENT_CDWEBGALLERY_PARAM_HORIZONTAL_ALIGN_LEFT</option>
+					<option value="CENTER">PLG_CONTENT_CDWEBGALLERY_PARAM_HORIZONTAL_ALIGN_CENTER</option>
+					<option value="RIGHT">PLG_CONTENT_CDWEBGALLERY_PARAM_HORIZONTAL_ALIGN_RIGHT</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</install>

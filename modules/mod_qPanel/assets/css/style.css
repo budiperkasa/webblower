@@ -1,0 +1,120 @@
+w/*
+
+ * QLUE Panel Custom Themes
+
+ * -----------------------
+
+ * -----------------------
+
+ * Author Dan Humphries - QLUE
+
+ * Copyright (C) 2011 QLUE 
+
+ */
+
+ 
+
+ /**
+
+ * This needs to make the logo hide when the panel is alive
+
+ * Return z-index back to the right value when panel is dead
+
+ */
+
+h1.logo a{
+
+  z-index: 0!important;
+
+}
+
+.qPanel{
+
+  width: 100%;
+
+  top: -2px;
+
+  left: 0;
+
+  position: fixed;
+
+  background: #252627;
+
+  z-index: 100!important;
+
+}
+
+.qPanel div.content {
+
+  width: 960px;
+
+  height: 260px!important;
+
+  margin: 0 auto;
+
+  padding: 0 0 10px 0;
+
+  color: #FFF;
+
+  overflow: hidden;
+
+  display: none;
+
+}
+
+
+
+.qPanel div.content div.columns{
+
+  height: 100%;
+
+  float: left;
+
+  display: inline;
+
+  overflow: hidden;
+
+}
+
+.qPanel div.content div.columns a{color: #FFF;}
+
+.qPanel div.content div.columns p{ text-align: justify; line-height: 18px; font-size: 1.3em;} 
+
+
+
+.column100{width: 100%;}
+
+.column50{width: 48%; margin: 0 5px 0 15px;}
+
+.column31{width: 31%; margin: 0 5px 0 18px;}
+
+.column22{width: 22%; margin: 0 14px 0 14px;}
+
+
+
+.qPanel-button{
+
+background: none repeat scroll 0 0 #252627;
+    border-radius: 5px 5px 5px 5px;
+    border-top: medium none;
+    color: #646666;
+    cursor: pointer;
+    float: right;
+    font-size: 10px;
+    line-height: 20px;
+    padding: 10px 10px 5px;
+    position: absolute;
+    right: 10px;
+    text-shadow: 0 -1px 0 #000000;
+    text-transform: uppercase;
+    top: -1px;
+    z-index: 100 !important;
+
+}
+
+.qPanel-button:hover {
+
+  text-decoration: underline;
+
+}
+

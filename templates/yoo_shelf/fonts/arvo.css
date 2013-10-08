@@ -1,0 +1,9 @@
+/* Copyright (C) 2007 - 2011 YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+@font-face {
+	font-family: 'ArvoRegular';
+	src: url('Arvo-Regular-webfont.eot?') format('eot'),
+		 url('Arvo-Regular-webfont.woff') format('woff'),
+		 url('Arvo-Regular-webfont.ttf') format('truetype'),
+		 url('Arvo-Regular-webfont.svg#ArvoRegular') format('svg');
+}

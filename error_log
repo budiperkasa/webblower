@@ -1,0 +1,24 @@
+[07-Nov-2011 14:31:48] PHP Warning:  require_once(/home/webbrcom/public_html/components/com_weblinks/helpers/route.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/webbrcom/public_html/plugins/search/weblinks.php on line 49
+[07-Nov-2011 14:31:48] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home/webbrcom/public_html/components/com_weblinks/helpers/route.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/webbrcom/public_html/plugins/search/weblinks.php on line 49
+[12-Nov-2011 14:11:54] PHP Warning:  ini_set() has been disabled for security reasons in /home/webbrcom/public_html/libraries/joomla/session/session.php on line 102
+[12-Nov-2011 14:11:54] PHP Warning:  ini_set() has been disabled for security reasons in /home/webbrcom/public_html/libraries/joomla/session/session.php on line 105
+[12-Nov-2011 14:11:54] PHP Warning:  ini_set() has been disabled for security reasons in /home/webbrcom/public_html/libraries/joomla/session/session.php on line 655
+[12-Nov-2011 14:35:04] PHP Warning:  ini_set() has been disabled for security reasons in /home/webbrcom/public_html/libraries/joomla/session/session.php on line 102
+[12-Nov-2011 14:35:04] PHP Warning:  ini_set() has been disabled for security reasons in /home/webbrcom/public_html/libraries/joomla/session/session.php on line 105
+[12-Nov-2011 14:35:04] PHP Warning:  ini_set() has been disabled for security reasons in /home/webbrcom/public_html/libraries/joomla/session/session.php on line 655
+[12-Nov-2011 14:38:37] PHP Warning:  ini_set() has been disabled for security reasons in /home/webbrcom/public_html/libraries/joomla/session/session.php on line 102
+[12-Nov-2011 14:38:37] PHP Warning:  ini_set() has been disabled for security reasons in /home/webbrcom/public_html/libraries/joomla/session/session.php on line 105
+[12-Nov-2011 14:38:37] PHP Warning:  ini_set() has been disabled for security reasons in /home/webbrcom/public_html/libraries/joomla/session/session.php on line 655
+[12-Nov-2011 18:47:08] PHP Warning:  ini_set() has been disabled for security reasons in /home/webbrcom/public_html/libraries/joomla/session/session.php on line 102
+[12-Nov-2011 18:47:08] PHP Warning:  ini_set() has been disabled for security reasons in /home/webbrcom/public_html/libraries/joomla/session/session.php on line 105
+[12-Nov-2011 18:47:08] PHP Warning:  ini_set() has been disabled for security reasons in /home/webbrcom/public_html/libraries/joomla/session/session.php on line 655
+[12-Nov-2011 18:47:47] PHP Warning:  ini_set() has been disabled for security reasons in /home/webbrcom/public_html/libraries/joomla/session/session.php on line 102
+[12-Nov-2011 18:47:47] PHP Warning:  ini_set() has been disabled for security reasons in /home/webbrcom/public_html/libraries/joomla/session/session.php on line 105
+[12-Nov-2011 18:47:47] PHP Warning:  ini_set() has been disabled for security reasons in /home/webbrcom/public_html/libraries/joomla/session/session.php on line 655
+[12-Nov-2011 18:49:09] PHP Warning:  ini_set() has been disabled for security reasons in /home/webbrcom/public_html/libraries/joomla/session/session.php on line 102
+[12-Nov-2011 18:49:09] PHP Warning:  ini_set() has been disabled for security reasons in /home/webbrcom/public_html/libraries/joomla/session/session.php on line 105
+[12-Nov-2011 18:49:09] PHP Warning:  ini_set() has been disabled for security reasons in /home/webbrcom/public_html/libraries/joomla/session/session.php on line 655
+[12-Nov-2011 19:34:30] PHP Warning:  ini_set() has been disabled for security reasons in /home/webbrcom/public_html/libraries/joomla/session/session.php on line 102
+[12-Nov-2011 19:34:30] PHP Warning:  ini_set() has been disabled for security reasons in /home/webbrcom/public_html/libraries/joomla/session/session.php on line 105
+[12-Nov-2011 19:34:30] PHP Warning:  ini_set() has been disabled for security reasons in /home/webbrcom/public_html/libraries/joomla/session/session.php on line 655
+[17-Nov-20
